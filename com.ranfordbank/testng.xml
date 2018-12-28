@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test1">
+  
+  <parameter name="browser" value="firefox"></parameter>
+    <classes>
+      <class name="com.pagelibrary.com.ranfordbank.TestExecution">
+      <methods>
+          <include name="verify_launch()"></include>
+          <include name="verify_login()()"></include>
+          <include name="srch_branches()"></include>
+          <include name="verify_new_branch()"></include>
+          
+      </methods>
+      
+      </class>
+    </classes>
+  </test> <!-- Test -->
+  
+  
+   <test thread-count="5" name="Test2">
+  
+  <parameter name="browser" value="chrome"></parameter>
+    <classes>
+      <class name="com.pagelibrary.com.ranfordbank.TestExecution">
+      <methods>
+          <include name="verify_login()"></include>
+          
+      </methods>
+      
+      </class>
+    </classes>
+  </test>
+</suite> <!-- Suite -->

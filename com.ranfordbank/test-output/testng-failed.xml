@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test1(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.pagelibrary.com.ranfordbank.TestExecution">
+        <methods>
+          <include name="beforemethod"/>
+          <include name="verify_new_branch"/>
+          <include name="aftermethod"/>
+          <include name="report"/>
+        </methods>
+      </class> <!-- com.pagelibrary.com.ranfordbank.TestExecution -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+  <test thread-count="5" name="Test2(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.pagelibrary.com.ranfordbank.TestExecution">
+        <methods>
+          <include name="beforemethod"/>
+          <include name="aftermethod"/>
+          <include name="report"/>
+          <include name="verify_login"/>
+        </methods>
+      </class> <!-- com.pagelibrary.com.ranfordbank.TestExecution -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [Suite] -->
